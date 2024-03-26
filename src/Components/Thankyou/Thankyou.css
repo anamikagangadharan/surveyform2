@@ -1,0 +1,53 @@
+/* .{
+  background-image: url(./mbl-Coming-soon-new.png);
+  background-image: url(./Coming-soon-new.png);
+} */
+
+.Containertq   {
+  background-image: url(./Coming-soon-new.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  color: #fff;
+  padding: 10px;
+  height: 100vh;
+  overflow: hidden;
+}
+.body{
+  /* margin: 0; */
+}
+
+.Head{
+  font-family: "Barlow Condensed";
+  font-weight: 500;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 100px;
+}
+
+.div2 {
+  position: absolute; 
+  bottom: 70px; 
+  text-align: center;
+  left: 0; 
+  width: 100%;
+  color:#9B9B9B;
+  font-family: "outfit";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+
+}
+
+@media screen and (max-width:768px) {
+
+  .Containertq {
+    background-image: url(./mbl-Coming-soon-new.png);
+  }
+  .body{
+    /* margin: 0 0; */
+  }
+
+}

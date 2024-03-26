@@ -1,0 +1,632 @@
+* {
+    font-family: "Outfit";
+    /* overflow: hidden; */
+}
+
+html {
+    overflow: hidden;
+}
+
+.Container {
+    background-image: url('./GraphicSide(1).svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    color: #fff;
+    padding: 10px;
+    background-color: black;
+    height: 100vh;
+    margin: auto auto;
+
+}
+
+
+.body {
+
+    margin: 25px 180px 10px 180px;
+    height: 596px;
+
+}
+
+.Heading {
+    margin: 36px auto 56px auto;
+    font-size: 28px;
+    font-family: "Barlow Condensed";
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+.content {
+    margin: 56px 36px 0 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 56px;
+}
+
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-150%));
+    }
+}
+
+
+
+.scroll {
+    display: flex;
+    gap: 24px;
+    margin-top: 85px;
+    scroll-behavior: smooth;
+    animation: scroll 20s linear infinite;
+}
+
+.scroll div {
+    width: 96px;
+}
+
+.scroll div div {
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 12px;
+}
+
+
+
+
+
+
+.left {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+
+}
+
+
+.right {
+    width: 50%;
+}
+
+.left div {
+    font-family: "Outfit";
+    font-size: 14px;
+    text-align: justify;
+    line-height: 24px;
+    margin-bottom: 5%;
+    font-weight: 300px;
+    /* opacity: 60%;     */
+    color: #E0E0E0;
+}
+
+.left {
+    padding-top: 10px;
+}
+
+button {
+    border-radius: 2px;
+    width: 93.5%;
+    margin-left: 40px;
+    border: none;
+    color: white;
+    background: linear-gradient(to top, rgba(0, 122, 255, 1) 50%, rgb(4, 30, 57) 100%);
+    padding: 10px;
+    font-family: "Outfit";
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+.Footer {
+    margin-top: 2%;
+}
+
+.char {
+    transition-delay: 0ms;
+}
+
+
+.inputset {
+    position: relative;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+
+
+.inputset label {
+    position: relative;
+    pointer-events: none;
+    top: -26px;
+    opacity: 60%;
+    transition: all 0.3s ease;
+}
+
+.inputset label span {
+    display: inline-block;
+    font-size: 14px;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    font-family: 'Outfit';
+    font-weight: 275;
+    /* text-transform: uppercase; */
+
+}
+
+.inputset input:focus+label span,
+.inputset input:valid+label span,
+.input2 input:valid+label span,
+.input2 input:focus+label span {
+    font-size: 12px;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+}
+
+.inputset input[type="text"] {
+    background-color: transparent !important;
+}
+
+.inputset input {
+    background-color: transparent;
+    border: 0;
+    display: block;
+    width: 100%;
+    padding-bottom: 8px;
+    padding-top: 15px;
+    color: #fff;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+}
+
+/* dropdown */
+.inputsetDrop {
+    position: relative;
+}
+
+.question-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    /* Add pointer cursor for better UX */
+    transition: all 0.3s ease;
+    /* Add smooth transition */
+}
+
+.custom-select {
+    padding-top: 20px;
+    /* Adjust as needed */
+}
+
+/*  */
+
+.inputset input:focus,
+.inputset input.valid,
+.inputset input.active,
+.inputset input:-webkit-autofill:focus,
+.inputset input:-webkit-autofill:hover,
+.inputset input:-webkit-autofill,
+.inputset input:-webkit-autofill:active {
+    outline: 0;
+
+}
+
+
+select {
+    padding-left: 0;
+    padding-bottom: 5px;
+}
+
+
+
+.input2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+    margin-top: 18px;
+    margin-bottom: 20px;
+}
+
+.input2 div {
+    width: 50%;
+}
+
+.inputsetRadio {
+    opacity: 60%;
+    font-family: "Outfit";
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.inputsetRadio input {
+    /* margin-left: 30px; */
+    /* color: blue; */
+
+    background: transparent;
+}
+
+.inputsetRadio input[type="radio"] {
+    background-color: transparent;
+    width: 18px;
+
+}
+
+[type="radio"] {
+    border: 0px;
+    width: 8%;
+    height: 18px;
+    /* margin-top: 20px; */
+}
+
+.radio-opt {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 28px;
+}
+
+.radioLabel {
+    margin: 2px 0 0 8px;
+}
+
+option {
+
+    font-size: 16px;
+    background-color: black;
+    /* font-family: "Outfit"; */
+    margin: 20px;
+
+
+}
+
+
+/* input{
+    background: white;
+    opacity: 60%;
+} */
+
+.select-container {
+    font-family: "Outfit", sans-serif;
+    margin-bottom: 20px;
+}
+
+.select-option {
+    font-family: "Outfit", sans-serif;
+}
+
+
+option:hover {
+    background-color: gray;
+}
+
+select {
+    font-family: "Outfit";
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    background: transparent;
+    color: #fff;
+    opacity: 60%;
+    width: 100%;
+
+}
+
+
+.inputsetDrop select {
+    opacity: 60%;
+    font-family: "Outfit";
+    font-size: 14px;
+    font-weight: 200;
+    margin-bottom: 4%;
+    outline: none;
+    padding-top: 10px;
+}
+
+.errormessages {
+    opacity: 60%;
+    font-family: "Outfit";
+    font-size: 14px;
+    text-align: right;
+    color: red;
+}
+
+@media screen and (max-width: 768px) {
+
+    html {
+        overflow: hidden;
+    }
+
+    .Container {
+        /* overflow: hidden; */
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .body {
+        margin: 5px;
+        height: 596px;
+
+        /* overflow: hidden; */
+        height: 100vh;
+    }
+
+    .Heading {
+        margin: 25px auto;
+        font-size: 28px;
+        font-family: "Barlow Condensed";
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+
+    }
+
+    .radio-opt {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 7px;
+    }
+
+    .content {
+        margin: 16px 10px 0 10px;
+        display: block;
+        justify-content: space-between;
+        gap: 56px;
+
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    button {
+        width: 95%;
+        margin: 5% 0 30% 0;
+
+
+    }
+
+    .input2 {
+        display: block;
+        justify-content: space-between;
+        gap: 28px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .input2 div {
+        width: 100%;
+
+    }
+
+    .inputsetRadio {
+        margin-bottom: 20px;
+    }
+
+    .radioLabel {
+        margin: 2px 0 0 3px;
+    }
+
+    .inputsetDrop {
+        margin-bottom: 30px;
+        outline: none;
+
+    }
+
+
+    .inputsetRadio input {
+        /* margin-left: 15px; */
+        /* display: block; */
+    }
+
+    .inputset {
+        margin-bottom: 20px;
+    }
+
+    .scroll {
+        margin-top: 50px
+    }
+
+    .inputset input {
+        background: transparent;
+    }
+
+    .inputset input:focus,
+    .inputset input.valid,
+    .inputset input.active,
+    .inputset input:-webkit-autofill:focus,
+    .inputset input:-webkit-autofill:hover,
+    .inputset input:-webkit-autofill,
+    .inputset input:-webkit-autofill:active {
+        outline: 0;
+        /* background:none; */
+        background-color: transparent;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .Container {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .body {
+        margin: 5px;
+        height: 596px;
+        height: 100vh;
+    }
+
+    .Heading {
+        margin: 25px auto;
+        font-size: 28px;
+        font-family: "Barlow Condensed";
+        text-align: center;
+        font-weight: 500;
+        text-transform: uppercase;
+
+    }
+
+    .content {
+        margin: 16px 10px 0 10px;
+        display: block;
+        justify-content: space-between;
+        gap: 56px;
+
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+        margin: 5% 20px 20% 10px;
+        /* margin: 0; */
+        /* margin-right: 20px; */
+
+
+
+    }
+
+    .input2 {
+        display: block;
+        justify-content: space-between;
+        gap: 28px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .input2 div {
+        width: 100%;
+
+    }
+
+    .inputsetRadio {
+        margin-bottom: 20px;
+    }
+
+    .inputsetDrop {
+        margin-bottom: 30px;
+        outline: none;
+
+    }
+
+    .inputsetRadio label {
+        width: 100%;
+        /* font-size: 15px; */
+        font-weight: 200;
+
+        /* opacity: 50%; */
+        /* display: block; */
+        /* text-align: center; */
+
+    }
+
+    .inputsetRadio input {
+        margin-left: 15px;
+        /* display: block; */
+    }
+
+    .inputset {
+        margin-bottom: 20px;
+    }
+
+    .scroll {
+        margin-top: 50px
+    }
+
+
+}
+
+.inputset input:focus,
+.inputset input.valid,
+.inputset input.active,
+.inputset input:-webkit-autofill:focus,
+.inputset input:-webkit-autofill:hover,
+.inputset input:-webkit-autofill,
+.inputset input:-webkit-autofill:active {
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset;
+    transition: background-color 5000s ease-in-out 0s;
+
+}
+
+
+
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+    color: white !important;
+    -webkit-box-shadow: none !important;
+}
+
+/* Additional selector for the font color */
+input:-internal-autofill-selected,
+input:-internal-autofill-selected:focus {
+    color: white !important;
+}
+
+/* For non-autofilled inputs */
+input:-webkit-autofill {
+    -webkit-text-fill-color: white !important;
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important;
+}
+
+/* For autofilled inputs */
+input:-webkit-autofill::first-line {
+    color: white !important;
+}
+
+
+
+
+
+
+
+
+
+
+.dropdown-label {
+    opacity: 60%;
+    font-size: 14px;
+    /* margin-top: -20px; */
+    font-weight: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    transition: top 0.5s ease;
+}
+
+.dropdown-label.moved {
+    top: -20px;
+    /* Adjust this value to your desired position */
+}
+
+.inputsetRadio {
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.inputset input::selection {
+    background: none;
+    background-color: aliceblue;
+}
+
+.inputset input {
+    /* background-color: aliceblue; */
+}

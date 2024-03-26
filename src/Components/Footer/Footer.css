@@ -1,0 +1,38 @@
+.footer {
+    position: fixed;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px; 
+    /* background:rgb(4, 30, 57) ; */
+    background: black;
+
+    width: 100%;
+    /* margin-top: 10%; */
+  }
+  
+  .footer img {
+    margin: 0 10px; 
+  }
+  
+  @media screen and (max-width: 768px){
+    .footer {
+     
+      background: black;
+
+    
+    }
+    
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1024px){
+    .footer {
+     
+      background: black;
+
+    
+    }
+  }
