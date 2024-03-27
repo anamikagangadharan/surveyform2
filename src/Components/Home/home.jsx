@@ -73,7 +73,8 @@ const Home = () => {
         }
 
         try {
-            const response = await axios.post('http://localhost:3000/api/submit-form', formData);
+            const response = await axios.post('http://34.93.154.200/api/submit-form', formData);
+            // const response = await axios.post('http://localhost:5000/api/submit-form', formData);
 
             if (response.status === 201) {
                 console.log('Form submitted successfully!');
